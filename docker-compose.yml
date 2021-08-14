@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+ 
+  db:
+    image: mysql/mysql-server
+    restart: always
+      #    command: --./sql/scripts/init.sql:/data/application/init.sql
+    container_name: mysql_docker
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: Minutesofmeeting
+    volumes:
+      - ./sql/scripts:/docker-entrypoint-initdb.d
+      - ./sql/config:/etc/mysql/conf.d/default.conf   
+      - ./sql/data:/var/lib/mysql  
+    ports: 
+      - "8000:3306"
+
+  web:
+    build: ./container
+    restart: always
+    container_name: alphaq_server
+    depends_on: 
+      - db
+    tty: true    
+
+ 
+    
+
+
