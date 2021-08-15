@@ -5,7 +5,6 @@ services:
   db:
     image: mysql/mysql-server
     restart: always
-      #    command: --./sql/scripts/init.sql:/data/application/init.sql
     container_name: mysql_docker
     environment:
       MYSQL_ROOT_PASSWORD: root
