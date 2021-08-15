@@ -16,3 +16,13 @@
 ### In the host shell
 #### docker cp alphaq_server:/home/Jay_Jay/MoM.txt /tmp/MoM.txt
 #### docker cp /tmp/MoM.txt mysql_docker:/var/lib/mysql-files/MoM.txt
+#
+### Inside mysql in mysql_docker container, run below commands if permission is denied 
+#### CREATE USER 'root'@'localhost' IDENTIFIED BY 'root';
+#### GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;
+#### CREATE USER 'root'@'%' IDENTIFIED BY 'root';
+#### GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
+#### FLUSH PRIVILEGES;
+#
+### Inside alphaq_server container
+#### python3 db.py
