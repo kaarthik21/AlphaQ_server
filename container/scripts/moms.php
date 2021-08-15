@@ -4,7 +4,7 @@
 <title>moms.local</title>
 <h1>List of MoMs:</h1>
 <?php
-$servername = "localhost";
+$servername = "db";
 $username = "root";
 $password = "root";
 $dbname = "Minutesofmeeting";
@@ -31,5 +31,6 @@ if ($result->num_rows > 0) {
 $conn->close();
 ?>
 
+<p><a href="insert.php"> CLICK HERE TO INSERT INTO MOM </a> </p>
 </body>
 </html>
