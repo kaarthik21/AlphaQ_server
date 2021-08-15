@@ -4,7 +4,7 @@ RUN apt-get update && DEBIAN_FRONTEND="noninteractive" TZ="Asia/India" apt-get i
 RUN apt-get install cron -y && apt-get install vim -y
 RUN apt-get install acl -y && apt-get install python3 -y && apt-get install mysql-server -y
 RUN apt install -y python3-pip && pip3 install pymysql && apt-get install apache2 -y  
-
+RUN apt-get install -y php && apt-get install -y php-mysql 
 
 WORKDIR /server
 COPY scripts /server/
