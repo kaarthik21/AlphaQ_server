@@ -13,9 +13,6 @@ if(isset($_POST['sub'])){
 <html>
 	<head>
 		<title>Login</title>
-<!--		<style type='styles.css'>
-       			@import styles.css;
-		</style>	-->
 			 
 		<style>
 			body{
