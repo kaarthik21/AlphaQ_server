@@ -3,7 +3,7 @@
 import pymysql
 
 # Connect to the database
-connection = pymysql.connect(host='localhost', user='root', passwd='root', db='Minutesofmeeting' )
+connection = pymysql.connect(host='db', user='root', passwd='root', db='Minutesofmeeting' )
 cursor=connection.cursor()
 
 # Drop table if already exists
