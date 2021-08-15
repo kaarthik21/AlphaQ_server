@@ -7,7 +7,7 @@
 #
 ### Inside alphaq_server container
 #
-####  mv crontab-schedule.txt /var/spool/crontabs/crontab-schedule.txt
+####  mv crontab-schedule.txt /var/spool/cron/crontabs/crontab-schedule.txt
 #### ./schedule.sh
 #### ./attendance.sh (with both y and n options)
 #### ./genMoM_1.sh
