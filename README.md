@@ -26,3 +26,7 @@
 #
 ### Inside alphaq_server container
 #### python3 db.py
+#### mv moms.local.conf /etc/apache2/sites-available/moms.local.conf
+#### cd /etc/apache2/sites-available/
+#### a2dissite 000-default.conf
+#### a2ensite moms.local.conf
