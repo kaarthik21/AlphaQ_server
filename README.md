@@ -30,3 +30,4 @@
 #### cd /etc/apache2/sites-available/
 #### a2dissite 000-default.conf
 #### a2ensite moms.local.conf
+#### service apache2 start
