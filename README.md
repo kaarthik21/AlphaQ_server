@@ -5,8 +5,8 @@
 ### TO GET IN alphaq_server CONTAINER WITH INTERACTIVE TERMINAL: docker exec -it alphaq_server bash
 ### TO GET IN mysql_docker CONTAINER WITH INTERACTIVE TERMINAL: docker exec -it mysql_docker bash
 #
-### Inside alphaq_server container
 #
+### Inside alphaq_server container
 ####  mv crontab-schedule.txt /var/spool/cron/crontabs/crontab-schedule.txt
 #### ./schedule.sh
 #### ./attendance.sh (with both y and n options)
