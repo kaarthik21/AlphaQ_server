@@ -12,7 +12,7 @@
 
 
         <?php
-        $servername='localhost';
+        $servername='db';
         $username='root';
         $password='root';
         $dbname = "Minutesofmeeting";
