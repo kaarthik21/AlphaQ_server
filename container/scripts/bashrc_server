@@ -1,0 +1,4 @@
+alias schedule="cd /server/ && schedule.sh"
+alias attendance="cd /server/ && attendance.sh"
+alias genMoM_1="cd /server/ && genMoM_1.sh"
+alias getMoM_2="cd /server/ && getMoM_2.sh"
