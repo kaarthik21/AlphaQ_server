@@ -32,7 +32,8 @@
 #### mv moms.local.conf /etc/apache2/sites-available/moms.local.conf
 #### cd /etc/apache2/sites-available/
 #### a2dissite 000-default.conf
+#### service apache2 reload
 #### a2ensite moms.local.conf
-#### service apache2 start
+#### service apache2 reload
 #
 #### Browse [IP_ADDR of docker]:[port of the container]/config.php to get the MoM login page
