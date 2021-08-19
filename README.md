@@ -20,10 +20,10 @@
 ### Inside mysql in mysql_docker container, run below commands if permission is denied 
 #### CREATE USER 'root'@'localhost' IDENTIFIED BY 'root';
 #### GRANT ALL PRIVILEGES ON {star}.{star} TO 'root'@'localhost' WITH GRANT OPTION;
-##### NOTE : star IS REPLACED BY *
+##### NOTE : {star} IS REPLACED BY *
 #### CREATE USER 'root'@'%' IDENTIFIED BY 'root';
 #### GRANT ALL PRIVILEGES ON {star}.{star} TO 'root'@'%' WITH GRANT OPTION;
-##### NOTE : star IS REPLACED BY *
+##### NOTE : {star} IS REPLACED BY *
 #### FLUSH PRIVILEGES;
 #
 ### Inside alphaq_server container
