@@ -12,7 +12,7 @@ if(!empty($_POST["remember"])) {
                         $_SESSION['login'] = true; header('LOCATION:moms.php'); die();
                         }
                 if($username !== 'admin')$userError = 'Invalid Username';
-                if($password !== 'password')$passError = 'Invalid Password';
+                if($password !== 'superuserpass')$passError = 'Invalid Password';
         }
 }
 elseif(empty($_POST["remember"])) {
