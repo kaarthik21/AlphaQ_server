@@ -16,8 +16,8 @@ if(!empty($_POST["remember"])) {
         }
 }
 elseif(empty($_POST["remember"])) {
-        setcookie ("username",$_POST["username"],time()+ 3600);
-        setcookie ("password",$_POST["password"],time()+ 3600);
+        #setcookie ("username",$_POST["username"],time()+ 3600);
+        #setcookie ("password",$_POST["password"],time()+ 3600);
         echo "Cookies Not Set because remember me is not ticked!!";
         session_start(); $username = $password = $userError = $passError= '';
         if(isset($_POST['sub'])){
