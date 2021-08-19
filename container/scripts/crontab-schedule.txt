@@ -1,2 +1,2 @@
-* 0 * * * schedule.sh
+0 0 * * * schedule.sh
 
