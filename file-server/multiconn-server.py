@@ -4,21 +4,19 @@ import os
 
 class Server:
     def __init__(self):
-        self.s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+        self.server = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
         self.accept_clients()
     
     def accept_clients(self):
         host = "0.0.0.0"
         port = 8080
-
-        self.s.bind((host,port))
-        self.s.listen(5)
-
+        self.server.bind((host,port))
+        self.server.listen(5)
         print("SERVER'S IP: "+host)
         print("SERVER'S PORT: "+str(port))
 
         while True:
-            clientsock, addr = self.s.accept()
+            clientsock, addr = self.server.accept()
             threading.Thread(target=self.handle_client,args=(clientsock,addr,)).start()
 
     def handle_client(self,clientsock,addr):
