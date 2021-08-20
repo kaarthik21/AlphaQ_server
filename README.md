@@ -36,5 +36,6 @@
 #### service apache2 reload
 #### a2ensite moms.local.conf
 #### service apache2 reload
+#### echo "127.0.0.1 www.moms.local" >> /etc/hosts
 #
 #### Browse [IP_ADDR of docker]:[port of the container]/config.php to get the MoM login page
