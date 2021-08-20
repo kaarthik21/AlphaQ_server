@@ -19,6 +19,8 @@ RUN mv /server/config.php /var/www/html/moms.local/config.php
 RUN mv /server/cookie.php /var/www/html/moms.local/cookie.php
 RUN mv /server/insert.php /var/www/html/moms.local/insert.php
 
+
+
 RUN service mysql start
 
 RUN bash /server/initialsetup.sh
